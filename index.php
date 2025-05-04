@@ -1,12 +1,12 @@
 <?php
 #BOT CREADO POR  Andresitoww
-$botToken = '5359484704:AAH-jUHJcjoCp05qrV5RuwEL1Is35V3KU9g'; #AGREGAMOS EL TOKEN DEL BOT Aqui Ponemos El 
+$botToken = '8170060922:AAHZt8Jti7U5ohkA0_kO4R9bV7GM4EIqNJQ'; #AGREGAMOS EL TOKEN DEL BOT Aqui Ponemos El 
 $website  = "https://api.telegram.org/bot".$botToken;
 $update   = file_get_contents('php://input');
 $update   = json_decode($update, true);
 $e        = print_r($update); //
 #EMPIEZA LA CAPTURA DE VARIABLES ENVIADOS AL CHAT
-$My_ID           = "1887258668";
+$My_ID           = "6602787316";
 $chatname        = $update["message"]["chat"]["title"]; 
 $newusername     = $update["message"]["new_chat_member"]["username"];
 $newgId          = $update["message"]["new_chat_member"]["id"];
@@ -40,7 +40,7 @@ $cofuid3 = '1889292794';
 //FUNCIONES
 include 'functions.php';
 //DATABASE CONNECT
-$link = mysqli_connect("sql3.freemysqlhosting.net", "sql3490732", "2RWi2ZWNLh", "sql3490732");
+$link = mysqli_connect("mysql-225faf94-sadabgamingyt2-ffce.c.aivencloud.com", "avnadmin", "AVNS_NfHe7zuzK84qAwp8_9d", "defaultdb");
 if($link === false){
     sendMessage1("ERROR: Could not connect. " . mysqli_connect_error());
     echo '<hr>' . mysqli_connect_error();
@@ -427,7 +427,7 @@ para conocer mis comandos.
 if((strpos($message, '/gen') === 0) or (strpos($message, '.gen') === 0) or (strpos($message, '!gen') === 0) or (strpos($message, '#gen') === 0) or (strpos($message, '?gen') === 0) or (strpos($message, '/bin') === 0) or (strpos($message, '.bin') === 0) or (strpos($message, '!bin') === 0) or (strpos($message, '#bin') === 0) or (strpos($message, '?bin') === 0) or (strpos($message, '/ch') === 0) or (strpos($message, '.ch') === 0) or (strpos($message, '!ch') === 0) or (strpos($message, '#ch') === 0) or (strpos($message, '?ch') === 0) or (strpos($message, '/sk') === 0) or (strpos($message, '.sk') === 0) or (strpos($message, '!sk') === 0) or (strpos($message, '#sk') === 0) or (strpos($message, '?sk') === 0) or (strpos($message, '/iban') === 0) or (strpos($message, '.iban') === 0) or (strpos($message, '!iban') === 0) or (strpos($message, '#iban') === 0) or (strpos($message, '?iban') === 0) or (strpos($message, '/ichk') === 0) or (strpos($message, '.ichk') === 0) or (strpos($message, '!ichk') === 0) or (strpos($message, '#ichk') === 0) or (strpos($message, '?ichk') === 0) or (strpos($message, '/rand') === 0) or (strpos($message, '.rand') === 0) or (strpos($message, '!rand') === 0) or (strpos($message, '#rand') === 0) or (strpos($message, '?rand') === 0)){
 sendMessage($chatId, "<b><i>[⚠️]Hello How are you bro🤙🏻 <a href='tg://user?id=$userId'>$firstname</a>
 ✳️You are well? you are not in my db convert premium user</i>
-- Owner: <a href='tg://user?id=1889292794'>Antonio</a></b>",$message_id);
+- Owner: <a href='tg://user?id=6602787316'>Antonio</a></b>",$message_id);
 }}
 
 
