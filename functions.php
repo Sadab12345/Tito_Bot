@@ -1,6 +1,6 @@
 <?php
 #Empieza La Creacion De Funciones
-$link = mysqli_connect("sql3.freemysqlhosting.net", "sql3490732", "2RWi2ZWNLh", "sql3490732");
+$link = mysqli_connect("mysql-225faf94-sadabgamingyt2-ffce.c.aivencloud.com", "avnadmin", "AVNS_NfHe7zuzK84qAwp8_9d", "defaultdb");
 
 function sendMessage($chatId, $message, $message_id)
 {
@@ -34,7 +34,7 @@ function SetAdmin($data)
         $file = fopen("admins.txt", "a+");
         fwrite($file, $data . PHP_EOL);
         fclose($file);
-$link = mysqli_connect("sql3.freemysqlhosting.net", "sql3490732", "2RWi2ZWNLh", "sql3490732");
+$link = mysqli_connect("mysql-225faf94-sadabgamingyt2-ffce.c.aivencloud.com", "avnadmin", "AVNS_NfHe7zuzK84qAwp8_9d", "defaultdb");
 $sql = "INSERT INTO PERSONS (userid, role, username, credits) VALUES( '$data', '[ADMIN]', '$username', '99999999') ";
 $result = mysqli_query($link, $sql);
 mysqli_close($link);
@@ -56,7 +56,7 @@ function SetPremium($data)
     }    
 function sendMessage1($message) {
        $message = urlencode($message);
-        $url = $GLOBALS[website]."/sendMessage?chat_id=-1001554610198&text=".$message."&parse_mode=HTML";
+        $url = $GLOBALS[website]."/sendMessage?chat_id=-10023842018618&text=".$message."&parse_mode=HTML";
         file_get_contents($url);
         
 }
